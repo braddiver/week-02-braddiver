@@ -6,7 +6,7 @@ describe "Strings are mutable: " do
       it "string A should not change" do
         a = "hello"
         b = a
-        b += " world"
+        b << " world"
         a.should eq "hello"
       end
     end
